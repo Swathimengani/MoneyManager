@@ -1,0 +1,51 @@
+.money-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .money-details {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.money-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2.8px 12px rgba(0,0,0,0.06);
+}
+
+.money-icon {
+  width: 56px;
+  height: 56px;
+}
+
+.balance-card {
+  background-color: #ecfccb; /* light green */
+  border: 1px solid #84cc16;
+}
+.income-card {
+  background-color: #cffafe; /* light cyan */
+  border: 1px solid #06b6d4;
+}
+.expenses-card {
+  background-color: #ede9fe; /* light violet */
+  border: 1px solid #7c3aed;
+}
+
+.money-card p {
+  margin: 0;
+}
+.money-card p:first-child {
+  color: #7e858e;
+  font-size: 14px;
+}
+.money-card p[data-testid] {
+  color: #1e293b;
+  font-size: 18px;
+  font-weight: 700;
+}

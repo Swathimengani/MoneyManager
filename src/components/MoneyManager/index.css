@@ -1,0 +1,109 @@
+.money-manager {
+  min-height: 100vh;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: #ffffff;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+/* Welcome banner */
+.welcome-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #334155;
+  box-shadow: 0 2.8px 12px rgba(0,0,0,0.08);
+}
+
+.welcome-container p {
+  margin: 0;
+  font-size: 16px;
+  color: #1e293b;
+}
+.highlight {
+  color: #0b69ff;
+  font-weight: 700;
+}
+
+/* Layout */
+.transactions-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  .transactions-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Form */
+.transaction-form {
+  border: 1px solid #d7dfe9;
+  border-radius: 12px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+.transaction-form h1 {
+  font-size: 18px;
+  color: #334155;
+  margin: 0 0 10px 0;
+}
+.transaction-form label {
+  display: block;
+  font-size: 12px;
+  color: #7e858e;
+  margin: 12px 0 6px;
+}
+.transaction-form input,
+.transaction-form select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d7dfe9;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  color: #334155;
+  box-sizing: border-box;
+}
+.transaction-form button {
+  margin-top: 16px;
+  background-color: #0b69ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* History */
+.history-section {
+  border: 1px solid #d7dfe9;
+  border-radius: 12px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+.history-section h1 {
+  font-size: 18px;
+  color: #334155;
+  margin: 0 0 10px 0;
+}
+.history-headings {
+  display: grid;
+  grid-template-columns: 1fr 120px 120px 48px;
+  gap: 8px;
+  border: 1px solid #d7dfe9;
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: #7e858e;
+  background: #ffffff;
+}
+.history-list {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0 0;
+}
